@@ -12,9 +12,9 @@ tags: []
 
 此前一直不太了解javascript的连续赋值，直到今天下午，看到一位同事大哥在群里发了这样一道题目：
 
-var foo = {n: 1};
-var bar = foo;
-foo.x = foo = {n: 2};
+    var foo = {n: 1};
+    var bar = foo;
+    foo.x = foo = {n: 2};    
 
 这个foo.x的值是多少？
 
