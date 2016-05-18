@@ -32,3 +32,13 @@ React的生命周期中的三个状态，分别对应三个方法：mountCompone
 将react-lifecycle mixin添加到需要观察的组件中，可以在控制台中观察到不同生命周期状态下，生命周期方法的调用顺序。反复实验后发现，首次装载组件时(First Render)、卸载组件时(Unmont)、重新装载组件时(Second Render)、组件状态更新时(Props Change/State Change)，生命周期方法的调用顺序如下。
 
 ![生命周期方法的调用顺序](http://o7bm68198.bkt.clouddn.com/life_circle_method.png)
+
+###### 状态一：MOUNTING
+Constructor负责管理getDefaultProps。getDefaultProps在整个生命周期的最开始执行，在一个生命周期中只执行1次。
+
+mountComponent负责管理getInitialState、componentWillMount、render、componentDidMount。
+
+通过mountComponent装载组件的过程如下：
+1.首先，利用getInitialState获取初始化state。
+2.在componentWillMount中调用setState，进行state合并。
+
