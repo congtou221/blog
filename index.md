@@ -16,4 +16,6 @@ tagline: sisi
 	<li><span>19 May 2016</span> &raquo; <a href="/2016/05/19/reactsource-part2-reactdiff">React源码剖析——react diff</a></li>
 	
 	<li><span>24 June 2016</span> &raquo; <a href="/2016/06/24/promise">promise解读</a></li>
+	
+	<li><span>3 July 2016</span> &raquo; <a href="/2016/07/03/nodejs-part1">《了不起的Node.js》读书笔记————命令行工具(CLI)以及FS API:首个Node应用</a></li>
 </ul>
